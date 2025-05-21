@@ -7,6 +7,10 @@ class Note(models.Model):
     creat_at = models.DateTimeField(auto_now_add= True)
 
     def __str__(self):
-        return f"{self.text[:30]}... ({self.category})"
+        return f"{self.phrase[:30]}... ({self.category})"
 
 
+    class Meta:
+        ordering = ['-creat_at']
+        verbose_name = "Note"
+        verbose_name_plural = "Notes"
