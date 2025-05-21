@@ -12,6 +12,7 @@ TRAIN_DATA = [
     # Éducation - Cours
     ("J’ai un cours de mathématiques demain", "Éducation - Cours"),
     ("Le professeur a parlé des fonctions", "Éducation - Cours"),
+    ("je dois aller a l'ecole", "Éducation - Cours"),
 
     # Éducation - Examen
     ("Je dois réviser pour l’examen final", "Éducation - Examen"),
@@ -32,6 +33,7 @@ TRAIN_DATA = [
     # Éducation - Révision
     ("Je relis mes fiches de révision", "Éducation - Révision"),
     ("Il faut que je révise le chapitre 5", "Éducation - Révision"),
+    ("une petite révision avant l'examen",  "Éducation - Révision"),
 
     # Loisir
     ("Je vais regarder un film", "Loisir"),
@@ -48,4 +50,48 @@ TRAIN_DATA = [
     # Famille
     ("Je vais chez mes parents", "Famille"),
     ("Appelle ta sœur ce soir", "Famille"),
+
+    #course
+    ("Acheter du lait et du pain", "Courses"),
+    ("Il faut acheter des œufs au supermarché", "Courses"),
+    ("Ma liste de courses : tomates, riz, bananes", "Courses"),
+
+    # rendez-vouz
+    ("Rendez-vous chez le dentiste à 15h", "Rendez-vous"),
+    ("N’oublie pas le rendez-vous avec le banquier", "Rendez-vous"),
+    ("RDV médecin jeudi prochain", "Rendez-vous"),
+
+
+    #🏠 Maison / Ménage
+    ("Faire le ménage dans le salon", "Maison"),
+    ("Changer les draps", "Maison"),
+    ("Je dois passer l’aspirateur", "Maison"),
+
+
+    ("Créer une appli pour étudiants", "Idée"),
+    ("Noter cette idée de roman", "Idée"),
+    ("Idée de business : food truck local", "Idée"),
+
+
+
+    ("Commencer la méditation", "Développement personnel"),
+    ("Lire 10 pages par jour", "Développement personnel"),
+    ("Éviter les réseaux sociaux le matin", "Développement personnel"),
+
+
+    ("Je me demande si je suis sur la bonne voie", "Pensée"),
+    ("Parfois, je doute trop", "Pensée"),
+    ("Et si je changeais complètement de domaine ?", "Pensée"),
+
+
+    ("Préparer la présentation avec Julie", "Collaboration"),
+    ("Organiser une réunion d’équipe", "Collaboration"),
+    ("Faire le devoir en binôme avec Alex", "Collaboration"),
+
+
+    ("Construire une étagère en bois", "Projet personnel"),
+    ("Créer un site pour mon portfolio", "Projet personnel"),
+    ("Écrire un scénario de court-métrage", "Projet personnel"),
+
+
 ]
