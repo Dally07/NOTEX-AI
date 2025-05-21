@@ -10,6 +10,11 @@ from .classifier import predict_category
 
 
 # Create your views here.
+
+def split_text_into_phrases(text):
+    phrases = re.split(r'[.?!,]\s*', text.strip())
+    return [p for p in phrases if p]
+
 class NoteViewSet(viewsets.ModelViewSet):
     queryset = Note.objects.all().order_by('-creat_at')
     serializer_class = NoteSerializers
@@ -21,16 +26,19 @@ class NoteViewSet(viewsets.ModelViewSet):
 
 class ClassifyTextApiView(APIView):
     def post(self, request, *args, **kwargs):
-        text = request.data.get("text","")
-        if not text.strip():
+        phrase=request.data.get("phrase","")
+        if not phrase.strip():
             return Response({"error": "le champ 'text' est requis."}, status=status.HTTP_400_BAD_REQUEST)
 
-        lines = re.split(r'[.!,?]\s', text.strip())
+        lines = split_text_into_phrases(phrase)
         lines = [p for p in lines if p]
         result = []
 
         for line in lines:
-            category = predict_category(line)
+            try:
+                category = predict_category(line)
+            except Exception:
+                category = "Inconnu"
             result.append({
                 "phrase" : line,
                 "category" : category
