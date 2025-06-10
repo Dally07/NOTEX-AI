@@ -2,6 +2,9 @@ TRAIN_DATA = [
     # Cuisine
     ("Je cuisine un gâteau", "Cuisine"),
     ("Recette de poulet frit", "Cuisine"),
+    ("Je vais cuisiner du riz", "Cuisine"),
+    ("Préparer le dîner ce soir", "Cuisine"),
+    ("Cuisiner des pâtes pour le déjeuner", "Cuisine"),
 
     # Santé
     ("Je veux dormir", "Santé"),
@@ -55,6 +58,15 @@ TRAIN_DATA = [
     ("Acheter du lait et du pain", "Courses"),
     ("Il faut acheter des œufs au supermarché", "Courses"),
     ("Ma liste de courses : tomates, riz, bananes", "Courses"),
+    ("Je vais au supermarché", "Courses"),
+    ("Il faut acheter du riz", "Courses"),
+    ("Acheter du savon et du dentifrice", "Courses"),
+    ("Courses au marché", "Courses"),
+    ("Liste de courses : pommes, yaourts, jus", "Courses"),
+    ("Je fais mes courses de la semaine", "Courses"),
+    ("J’achète des légumes frais", "Courses"),
+    ("Je dois aller faire des courses", "Courses"),
+
 
     # rendez-vouz
     ("Rendez-vous chez le dentiste à 15h", "Rendez-vous"),
