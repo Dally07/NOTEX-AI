@@ -10,8 +10,8 @@ from .traindata import TRAIN_DATA
 MODEL_PATH = os.path.join(os.path.dirname(__file__), 'note_classifier.pkl')
 
 def train_and_save_model():
-    x = [item["phrase"] for item in TRAIN_DATA]
-    y = [item["category"] for item in TRAIN_DATA]
+    x = [phrase for phrase, category in TRAIN_DATA]
+    y = [category for phrase, category in TRAIN_DATA]
 
     pipeline = Pipeline([
         ('vect', CountVectorizer()),
