@@ -32,7 +32,7 @@ git clone https://github.com/Dally07/NOTEX-AI.git
 ```
 
 ```bash
-cd notex_ai
+cd NOTEX-AI
 python -m venv venv
 source venv/bin/activate  # ou .\venv\Scripts\activate sous Windows
 ```
@@ -91,7 +91,7 @@ Analyse une ou plusieurs phrases et retourne leurs intentions détectées.
   },
   {
     "phrase": "Il faut acheter des œufs au supermarché",
-    "categories": ["Vie quotidienne", "Courses"]
+    "categories": ["Courses"]
   }
 ]
 ```
