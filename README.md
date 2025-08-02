@@ -83,11 +83,11 @@ Analyse une ou plusieurs phrases et retourne leurs intentions détectées.
   },
   {
     "phrase": "Je vais cuisiner",
-    "categories": ["Santé"]
+    "categories": ["Cuisine"]
   },
   {
     "phrase": "aller au supermarché",
-    "categories": ["Vie quotidienne"]
+    "categories": ["Courses"]
   },
   {
     "phrase": "Il faut acheter des œufs au supermarché",
@@ -107,7 +107,7 @@ Le modèle s’entraîne sur un fichier train_data.json contenant des exemples s
   },
   {
     "phrase": "acheter du lait et du pain",
-    "categories": ["Vie quotidienne", "Courses"]
+    "categories": ["Courses"]
   }
 ]
 ```
