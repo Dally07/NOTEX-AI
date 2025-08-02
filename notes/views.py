@@ -12,17 +12,13 @@ from .classifier import predict_category
 # Create your views here.
 
 def split_text_into_phrases(text):
-    phrases = re.split(r'[.?!,]\s*', text.strip())
-    return [p for p in phrases if p]
+    phrases = re.split(r'[.?!;]\s*|[,]\s*', text.strip())
+    return [p.strip().lstrip(".,;: ") for p in phrases if p.strip()]
+
 
 class NoteViewSet(viewsets.ModelViewSet):
     queryset = Note.objects.all().order_by('-creat_at')
     serializer_class = NoteSerializers
-
-    def perform_create(self, serializer):
-        text = serializer.validated_data.get('phrase')
-        category = predict_category(text)
-        serializer.save(category=category)
 
 class ClassifyTextApiView(APIView):
     def post(self, request, *args, **kwargs):
